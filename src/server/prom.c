@@ -21,9 +21,9 @@
 
 #include "microhttpd.h"
 #include "prom.h"
-#include "promhttp.h"
-#include "foo.h"
-#include "bar.h"
+#include "prometheus/promhttp.h"
+#include "prometheus/foo.h"
+#include "prometheus/bar.h"
 
 
 prom_histogram_t *test_histogram;
