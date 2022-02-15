@@ -118,17 +118,17 @@ limitations under the License.
 #ifndef PROM_INCLUDED
 #define PROM_INCLUDED
 
-#include "prometheus/prom_alloc.h"
-#include "prometheus/prom_collector.h"
-#include "prometheus/prom_collector_registry.h"
-#include "prometheus/prom_counter.h"
-#include "prometheus/prom_gauge.h"
-#include "prometheus/prom_histogram.h"
-#include "prometheus/prom_histogram_buckets.h"
-#include "prometheus/prom_linked_list.h"
-#include "prometheus/prom_map.h"
-#include "prometheus/prom_metric.h"
-#include "prometheus/prom_metric_sample.h"
-#include "prometheus/prom_metric_sample_histogram.h"
+#include "prom_alloc.h"
+#include "prom_collector.h"
+#include "prom_collector_registry.h"
+#include "prom_counter.h"
+#include "prom_gauge.h"
+#include "prom_histogram.h"
+#include "prom_histogram_buckets.h"
+#include "prom_linked_list.h"
+#include "prom_map.h"
+#include "prom_metric.h"
+#include "prom_metric_sample.h"
+#include "prom_metric_sample_histogram.h"
 
 #endif //  PROM_INCLUDED

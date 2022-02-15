@@ -123,7 +123,7 @@ ifndef CONFIG_WINDOWS
     PATH_DEFS += -DHOMEDIR='"$(CONFIG_PATH_HOME)"'
 endif
 
-CFLAGS_s += $(BUILD_DEFS) $(VER_DEFS) $(PATH_DEFS) -DUSE_SERVER=1
+CFLAGS_s += $(BUILD_DEFS) $(VER_DEFS) $(PATH_DEFS) -D=1
 CFLAGS_c += $(BUILD_DEFS) $(VER_DEFS) $(PATH_DEFS) -DUSE_SERVER=1 -DUSE_CLIENT=1
 
 # windres needs special quoting...
@@ -502,7 +502,7 @@ endif
 
 ifdef CONFIG_PROM_METRICS
     CFLAGS_s += -DUSE_PROM_METRICS=1
-    OBJS_s += src/server/prom/prom.o
+    OBJS_s += src/server/prom.o
 endif
 
 ### Targets ###
