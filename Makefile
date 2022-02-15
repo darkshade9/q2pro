@@ -500,6 +500,11 @@ ifdef CONFIG_DEBUG
     CFLAGS_s += -D_DEBUG
 endif
 
+ifdef CONFIG_PROM_METRICS
+    CFLAGS_s += -DUSE_PROM_METRICS=1
+    OBJS_s += src/server/prom/prom.o
+endif
+
 ### Targets ###
 
 ifdef CONFIG_WINDOWS
