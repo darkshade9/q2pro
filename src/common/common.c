@@ -299,6 +299,7 @@ static void logfile_write(print_type_t type, const char *s)
             case PRINT_WARNING:   *p = 'W'; break;
             case PRINT_ERROR:     *p = 'E'; break;
             case PRINT_NOTICE:    *p = 'N'; break;
+            case PRINT_STAT:      *p = 'S'; break;
             default:              *p = 'A'; break;
             }
         }
@@ -444,6 +445,8 @@ void Com_LPrintf(print_type_t type, const char *fmt, ...)
             break;
         case PRINT_NOTICE:
             Com_SetColor(COLOR_CYAN);
+            break;
+        case PRINT_STAT:
             break;
         default:
             break;

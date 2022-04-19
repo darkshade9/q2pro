@@ -95,7 +95,8 @@ typedef enum {
     PRINT_DEVELOPER,    // only print when "developer 1"
     PRINT_WARNING,      // print in yellow color
     PRINT_ERROR,        // print in red color
-    PRINT_NOTICE        // print in cyan color
+    PRINT_NOTICE,       // print in cyan color
+    PRINT_STAT          // print stats (not to client, console logs only)
 } print_type_t;
 
 void    Com_LPrintf(print_type_t type, const char *fmt, ...)
@@ -111,7 +112,8 @@ q_noreturn q_printf(2, 3);
 #define PRINT_LOW           0       // pickup messages
 #define PRINT_MEDIUM        1       // death messages
 #define PRINT_HIGH          2       // critical messages
-#define PRINT_CHAT          3       // chat messages    
+#define PRINT_CHAT          3       // chat messages
+#define PRINT_STAT          6       // stat messages
 
 // destination class for gi.multicast()
 typedef enum {
